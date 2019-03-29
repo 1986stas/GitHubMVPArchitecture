@@ -1,0 +1,19 @@
+ext {
+    supportVersion = '24.2.1'
+    okhttpVersion = '3.4.1'
+    retrofitVersion = '2.1.0'
+    rxjavaVersion = '1.1.10'
+    rxandroidVersion = '1.2.1'
+
+    sqliteVersion = '0.1.7'
+
+    materialDialogsVersion = '0.9.0.2'
+    robotoTextViewVersion = '2.4.0'
+
+    junitVersion = '4.12'
+    powerMockVersion = '1.6.2'
+    robolectricVersion = '3.1.2'
+    mockitoVersion = '1.10.19'
+    espressoVersion = '2.2'
+    testRunnerVersion = '0.5'
+}
