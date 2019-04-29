@@ -14,6 +14,8 @@ import ru.itis.lectures.githubmvp.fragment.dialog.LoadingDialog;
 import ru.itis.lectures.githubmvp.presenter.LogInPresenter;
 import ru.itis.lectures.githubmvp.view.LogInView;
 
+import static ru.itis.lectures.githubmvp.utils.Views.findById;
+
 public class LogInActivity extends AppCompatActivity implements View.OnClickListener, LogInView {
 
     private EditText mLoginEdit;

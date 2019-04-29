@@ -12,9 +12,6 @@ import rx.Observable;
 
 import java.util.List;
 
-/**
- * @author Artur Vasilov
- */
 public class IntegrationGithubService implements GithubService {
 
     @Override

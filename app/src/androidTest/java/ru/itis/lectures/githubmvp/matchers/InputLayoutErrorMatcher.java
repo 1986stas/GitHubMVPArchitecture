@@ -8,9 +8,6 @@ import android.view.View;
 import org.hamcrest.Description;
 import org.hamcrest.TypeSafeMatcher;
 
-/**
- * @author Artur Vasilov
- */
 public class InputLayoutErrorMatcher extends TypeSafeMatcher<View> {
 
     @StringRes

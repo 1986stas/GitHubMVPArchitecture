@@ -18,9 +18,6 @@ import static android.support.test.espresso.intent.matcher.IntentMatchers.hasCom
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static org.junit.Assert.assertNotNull;
 
-/**
- * @author Artur Vasilov
- */
 @RunWith(AndroidJUnit4.class)
 public class WalkthroughActivityTest {
 

@@ -8,9 +8,6 @@ import android.support.test.espresso.IdlingResource;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author Artur Vasilov
- */
 public class TestUtils {
 
     @NonNull

@@ -35,10 +35,8 @@ import static android.support.test.espresso.contrib.RecyclerViewActions.actionOn
 import static android.support.test.espresso.contrib.RecyclerViewActions.scrollToPosition;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static org.hamcrest.CoreMatchers.not;
 
-/**
- * @author Artur Vasilov
- */
 @RunWith(AndroidJUnit4.class)
 public class RepositoriesActivityTest {
 

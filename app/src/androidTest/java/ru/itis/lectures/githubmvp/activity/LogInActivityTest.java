@@ -40,11 +40,9 @@ import static android.support.test.espresso.action.ViewActions.*;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.intent.matcher.IntentMatchers.hasComponent;
 import static android.support.test.espresso.matcher.ViewMatchers.*;
+import static org.hamcrest.core.AllOf.allOf;
 import static ru.itis.lectures.githubmvp.matchers.InputLayoutErrorMatcher.withInputError;
 
-/**
- * @author Artur Vasilov
- */
 @RunWith(AndroidJUnit4.class)
 public class LogInActivityTest {
 

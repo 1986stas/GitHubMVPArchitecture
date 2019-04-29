@@ -4,9 +4,6 @@ import android.support.annotation.NonNull;
 import ru.itis.lectures.githubmvp.api.ApiProvider;
 import ru.itis.lectures.githubmvp.api.GithubService;
 
-/**
- * @author Artur Vasilov
- */
 public class IntegrationProviderImpl implements ApiProvider {
 
     private final GithubService mService;

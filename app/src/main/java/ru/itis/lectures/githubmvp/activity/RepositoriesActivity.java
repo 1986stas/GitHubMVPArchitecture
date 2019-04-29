@@ -21,6 +21,8 @@ import ru.itis.lectures.githubmvp.widget.RepositoriesAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import static ru.itis.lectures.githubmvp.utils.Views.findById;
+
 
 public class RepositoriesActivity extends AppCompatActivity implements RepositoriesView,
         BaseAdapter.OnItemClickListener<Repository> {

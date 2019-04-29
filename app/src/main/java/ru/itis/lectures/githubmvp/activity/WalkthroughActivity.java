@@ -10,6 +10,8 @@ import ru.itis.lectures.githubmvp.view.WalkthroughView;
 import ru.itis.lectures.githubmvp.widget.PageChangeViewPager;
 import ru.itis.lectures.githubmvp.widget.WalkthroughAdapter;
 
+import static ru.itis.lectures.githubmvp.utils.Views.findById;
+
 
 public class WalkthroughActivity extends AppCompatActivity implements View.OnClickListener,
         PageChangeViewPager.PagerStateListener, WalkthroughView {
