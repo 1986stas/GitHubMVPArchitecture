@@ -6,7 +6,6 @@ apply from: '../variables.gradle'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion '27.0.3'
 
     defaultConfig {
         applicationId "ru.itis.lectures.githubmvp"
@@ -39,43 +38,43 @@ apply from: '../versions.gradle'
 
 dependencies {
     //noinspection GradleCompatible
-    compile "com.android.support:support-v4:28.0.0"
-    compile "com.android.support:support-v13:28.0.0"
-    compile "com.android.support:appcompat-v7:28.0.0"
-    compile "com.android.support:recyclerview-v7:28.0.0"
-    compile "com.android.support:design:28.0.0"
+    implementation "com.android.support:support-v4:28.0.0"
+    implementation "com.android.support:support-v13:28.0.0"
+    implementation "com.android.support:appcompat-v7:28.0.0"
+    implementation "com.android.support:recyclerview-v7:28.0.0"
+    implementation "com.android.support:design:28.0.0"
 
-    compile "com.squareup.okhttp3:okhttp:$okhttpVersion"
-    compile "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
-    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
-    compile "com.squareup.retrofit2:converter-gson:$retrofitVersion"
-    compile "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion"
-    compile "io.reactivex:rxjava:$rxjavaVersion"
-    compile "io.reactivex:rxandroid:$rxandroidVersion"
+    implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion"
+    implementation "io.reactivex:rxjava:$rxjavaVersion"
+    implementation "io.reactivex:rxandroid:$rxandroidVersion"
 
-    compile "ru.arturvasilov:sqlite:$sqliteVersion"
+    implementation "ru.arturvasilov:sqlite:$sqliteVersion"
 
-    compile("com.afollestad.material-dialogs:core:$materialDialogsVersion") {
+    implementation("com.afollestad.material-dialogs:core:$materialDialogsVersion") {
         transitive = true
     }
 
-    testCompile "junit:junit:$junitVersion"
-    testCompile("org.robolectric:robolectric:$robolectricVersion") {
+    testImplementation "junit:junit:$junitVersion"
+    testImplementation("org.robolectric:robolectric:$robolectricVersion") {
         exclude group: 'commons-logging', module: 'commons-logging'
         exclude group: 'org.apache.httpcomponents', module: 'httpclient'
     }
-    testCompile "org.mockito:mockito-core:$mockitoVersion"
-    testCompile "org.powermock:powermock-api-mockito:$powerMockVersion"
-    testCompile "org.powermock:powermock-module-junit4:$powerMockVersion"
+    testImplementation "org.mockito:mockito-core:$mockitoVersion"
+    testImplementation "org.powermock:powermock-api-mockito:$powerMockVersion"
+    testImplementation "org.powermock:powermock-module-junit4:$powerMockVersion"
 
     // UI/Instrumentation testing
-    androidTestCompile "com.android.support:support-v4:28.0.0"
-    androidTestCompile "com.android.support:recyclerview-v7:28.0.0"
-    androidTestCompile "com.android.support.test.espresso:espresso-core:$espressoVersion"
-    androidTestCompile "com.android.support.test.espresso:espresso-intents:$espressoVersion"
-    androidTestCompile "com.android.support.test.espresso:espresso-contrib:$espressoVersion"
-    androidTestCompile "com.android.support.test:runner:$testRunnerVersion"
-    androidTestCompile "com.android.support.test:rules:$testRunnerVersion"
+    androidTestImplementation "com.android.support:support-v4:28.0.0"
+    androidTestImplementation "com.android.support:recyclerview-v7:28.0.0"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-intents:$espressoVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-contrib:$espressoVersion"
+    androidTestImplementation "com.android.support.test:runner:$testRunnerVersion"
+    androidTestImplementation "com.android.support.test:rules:$testRunnerVersion"
 
     implementation 'com.google.firebase:firebase-core:16.0.8'
 }
