@@ -2,24 +2,30 @@ package ru.itis.lectures.githubmvp.widget;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
-import ru.itis.lectures.githubmvp.content.Benefit;
-import ru.itis.lectures.githubmvp.fragment.WalkthroughBenefitFragment;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import ru.itis.lectures.githubmvp.content.Benefit;
+import ru.itis.lectures.githubmvp.fragment.WalkthroughBenefitFragment;
 
 import static junit.framework.Assert.assertNotNull;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
-import static org.powermock.api.mockito.PowerMockito.*;
+import static org.powermock.api.mockito.PowerMockito.mock;
+import static org.powermock.api.mockito.PowerMockito.mockStatic;
+import static org.powermock.api.mockito.PowerMockito.when;
 
+@Ignore("needs to be ignored for the jenkins build")
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(WalkthroughBenefitFragment.class)
 public class WalkthroughAdapterTest {

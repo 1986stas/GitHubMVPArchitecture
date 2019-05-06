@@ -3,10 +3,16 @@ package ru.itis.lectures.githubmvp.presenter;
 import android.app.LoaderManager;
 import android.content.Context;
 import android.support.annotation.NonNull;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
 import ru.itis.lectures.githubmvp.api.ApiFactory;
 import ru.itis.lectures.githubmvp.content.Repository;
 import ru.itis.lectures.githubmvp.repository.RepositoriesRepository;
@@ -16,14 +22,13 @@ import ru.itis.lectures.githubmvp.testutils.TestProviderImpl;
 import ru.itis.lectures.githubmvp.view.RepositoriesView;
 import rx.Observable;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 import static junit.framework.TestCase.assertNotNull;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyList;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 @SuppressWarnings("unchecked")
 @RunWith(JUnit4.class)
@@ -145,5 +150,4 @@ public class RepositoriesPresenterTest {
             // Do nothing
         }
     }
-
 }
